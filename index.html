@@ -1,26 +1,41 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width", initial-scale ="1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./StyleSheet.css" />
-    <title>Ranodm Physics Experiments</title>
+    <title>Random Physics Experiments</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <h3 id="LC">Liquid Crystal</h3>
-            <img src="./images/wires.png" alt="wires" width="335" height="304"/>
-            <img src="./images/glass_slide.png" width="610" height="68" alt="glass slide" />
-        </nav>
-    </header>
+    <div class="header">
+        <h1>Random Physics Experiments</h1>
+    </div>
+
+    <div class="contentBackground"></div>
+    <!--
+    <div class="fullImage"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
             integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
             integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
+    // -->
     <script src="simulation.js"></script>
-    <h1>Hello World</h1>
-    <p>This is my first website.</p>
+    <section>
+        <h2>Liquid Crystal cell</h2>
+        <p>
+            <button onclick="myMove()">Apply voltage</button>
+        </p>
+        <div id="simulationBox">
+            <img class="img2" src="./images/glass_slide.png" width="610" height="68" alt="glass slide" />
+            <img class="img3" src="./images/glass_slide.png" width="610" height="68" alt="glass slide" />
+            <img class="img1" src="./images/wires.png" alt="wires" width="335" height="308" />
+
+            <img class="molecules" id="mol1" src="./images/molecule.png" width="50" height="10" />
+            <img class="molecules" id="mol2" src="./images/molecule.png" width="50" height="10" />
+            <img class="molecules" id="mol3" src="./images/molecule.png" width="50" height="10" />
+            <img class="molecules" id="mol4" src="./images/molecule.png" width="50" height="10" />
+        </div>
+    </section>
 </body>
 </html>
